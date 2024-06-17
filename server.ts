@@ -9,9 +9,10 @@ const __dirname = dirname(__filename);
 const app = express();
 const port = process.env.PORT || 8080;
 
-app.use(express.static(path.join(__dirname, "dist")));
-app.get("*", (request, response) => {
-  response.sendFile(path.join(__dirname, "dist", "index.html"));
+app.use(express.static(path.resolve(__dirname, "dist"), { index: false }));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "dist", "index.html"));
 });
 
 app.listen(port, () => {
