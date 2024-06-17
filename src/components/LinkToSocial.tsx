@@ -41,10 +41,7 @@ export default function LinkToSocial({
             justify-center items-center w-full h-full rounded-xl z-10
             duration-200 group-hover:-top-1 group-hover:-right-1"
           >
-            <img
-              src={`../public/${icon}`}
-              className="absolute left-5 h-6 w-6"
-            />
+            <img src={icon} className="absolute left-5 h-6 w-6" />
             <span className="text-white text-xl font-h2">{title}</span>
           </div>
         </div>

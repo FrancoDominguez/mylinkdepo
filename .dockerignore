@@ -1,0 +1,6 @@
+vite.config.ts
+node_modules
+.gitignore
+dist
+README.md
+
