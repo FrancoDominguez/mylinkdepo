@@ -1,5 +1,4 @@
 node_modules
-vite.config.ts
 .gitignore
 dist
 README.md
