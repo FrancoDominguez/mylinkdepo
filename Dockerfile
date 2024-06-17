@@ -8,6 +8,6 @@ RUN npm install --silent
 
 COPY . .
 
-RUN npm run build --silent
+RUN npm run build
 
 CMD ["npm", "run", "serve"]
