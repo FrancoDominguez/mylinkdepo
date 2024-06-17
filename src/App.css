@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-width: 200px;
+  max-width: 550px;
+  background-color: #;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.stroke-black {
+  -webkit-text-stroke: 2px black;
+}
+
+@property --gradient-position {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: false;
+}
+
+@keyframes slide {
+  0%,
+  100% {
+    --gradient-position: 0%;
+  }
+  50% {
+    --gradient-position: 100%;
+  }
+}
+
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+      to right,
+      var(--clr-1),
+      var(--clr-2),
+      var(--clr-3),
+      var(--clr-4),
+      var(--clr-5)
+    )
+    no-repeat;
+  background-size: 200% 100%;
+  background-position: var(--gradient-position);
+
+  border-radius: inherit;
+  animation: slide 4s linear infinite;
+}
