@@ -13,12 +13,11 @@ function App() {
             <img
               src="/PicOfMe.jpg"
               alt="Pic of me"
-              className="w-full h-full object-cover scale-150"
+              className=" w-full h-full object-cover scale-150"
             />
           </div>
         </div>
-
-        <div className="font-h2 text-4xl">Franco Dominguez</div>
+        <div className="font-h2 text-4xl pt-5">Franco Dominguez</div>
       </div>
       <LinkToSocial
         title="Instagram"
