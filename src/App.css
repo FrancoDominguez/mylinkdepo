@@ -18,6 +18,12 @@
   -webkit-text-stroke: 2px black;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .hover\:underline:hover {
+    text-decoration-line: underline;
+  }
+}
+
 @property --gradient-position {
   syntax: "<percentage>";
   initial-value: 0%;
