@@ -27,7 +27,7 @@ function App() {
         gradientColors={["#feda75", "#fa7e1f", "#d62976", "#9530bf", "#4f5bd5"]}
       />
       <LinkToSocial
-        title="chat app"
+        title="Discord"
         links={["https://discord.com/users/222404358292111360"]}
         icon="discord.png"
         gradientColors={["#7289da", "#1cb955", "#7289da", "#424549", "#202225"]}
