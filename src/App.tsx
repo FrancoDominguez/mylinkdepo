@@ -4,7 +4,7 @@ import LinkToSocial from "./components/LinkToSocial.tsx";
 function App() {
   return (
     <>
-      <div className="absolute top-0 right-1 font-h2 text-black text-2xs text-shadow-default">
+      <div className="absolute top-0 right-1 font-h2 text-black text-xs text-shadow-default">
         Made by: Franco Dominguez
       </div>
       <div className="relative flex flex-col items-center pb-5">
