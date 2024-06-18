@@ -1,5 +1,6 @@
 import "./App.css";
 import LinkToSocial from "./components/LinkToSocial.tsx";
+import BottomLinks from "./components/BottomLinks.tsx";
 
 function App() {
   return (
@@ -56,30 +57,21 @@ function App() {
       />
 
       <div className="flex flex-row justify-center items-center pt-3">
-        <a href="https://www.strava.com/athletes/66301940" target="_blank">
-          <img
-            src="strava.png"
-            className="h-10 w-10 ml-3 opacity-90 duration-200 hover:opacity-100 hover:scale-110 hover:-translate-y-1"
-            title="strava"
-          />
-        </a>
-        <a
-          target="_blank"
-          href="https://l.messenger.com/l.php?u=https%3A%2F%2Fsnapchat.com%2Ft%2FQJl21TOi&h=AT3tNbhXZHMBZ4VN-wGewBhgbWRk1iTlGgRYPFpjobLYcDCNGl51TB4CDTQ7InJsDNmaHaQyYMpbtgeaKgtB5Vxy90ivQx2frHDz-8-KvmAP7P2ny2Dd5Icvk42AUpvMC3FUQA"
-        >
-          <img
-            src="snapchat.png"
-            className="h-10 w-10 ml-3 opacity-90 duration-200 hover:opacity-100 hover:scale-110 hover:-translate-y-1"
-            title="snapchat"
-          />
-        </a>
-        <a href="https://youtu.be/5PUg1SiL3mQ" target="_blank">
-          <img
-            src="onlyfans.png"
-            className="h-10 w-10 ml-3 opacity-90 duration-200 hover:opacity-100 hover:scale-110 hover:-translate-y-1"
-            title="onlyfans"
-          />
-        </a>
+        <BottomLinks
+          title="strava"
+          icon="strava.png"
+          link="https://www.strava.com/athletes/66301940"
+        />
+        <BottomLinks
+          title="snapchat"
+          icon="snapchat.png"
+          link="https://l.messenger.com/l.php?u=https%3A%2F%2Fsnapchat.com%2Ft%2FQJl21TOi&h=AT3tNbhXZHMBZ4VN-wGewBhgbWRk1iTlGgRYPFpjobLYcDCNGl51TB4CDTQ7InJsDNmaHaQyYMpbtgeaKgtB5Vxy90ivQx2frHDz-8-KvmAP7P2ny2Dd5Icvk42AUpvMC3FUQA"
+        />
+        <BottomLinks
+          title="onlyfans"
+          icon="onlyfans.png"
+          link="https://youtu.be/5PUg1SiL3mQ"
+        />
       </div>
     </>
   );
