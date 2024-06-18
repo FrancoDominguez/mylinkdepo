@@ -9,19 +9,13 @@
   min-width: 200px;
   max-width: 550px;
   background-color: #;
-  padding-top: 250px;
-  padding-bottom: 400px;
+  padding-top: 100px;
+  padding-bottom: 300px;
   padding-right: 20px;
   padding-left: 20px;
 }
 .stroke-black {
   -webkit-text-stroke: 2px black;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .hover-effect:hover {
-    /* your hover styles */
-  }
 }
 
 @property --gradient-position {
