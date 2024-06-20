@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 interface CustomCSSProperties extends React.CSSProperties {
   "--clr-1"?: string;
@@ -29,25 +29,15 @@ export default function LinkToSocial({
     "--clr-5": gradientColors[4],
   };
 
-  const [isNonTouchDevice, setIsNonTouchDevice] = useState(false);
-
-  useEffect(() => {
-    if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
-      setIsNonTouchDevice(true);
-    }
-  }, []);
-
   return (
     <div className="flex pt-1 pb-5 w-full z-10 group">
       <a href={links[0]} target="_blank" className="w-full">
         <div
-          className={`relative flex justify-center items-center w-full rounded-xl h-[60px] card ${
-            isNonTouchDevice ? "hover-effect" : ""
-          }`}
+          className="relative flex justify-center items-center w-full rounded-xl h-[60px] card"
           style={style}
         >
           <div
-            className="absolute flex bg-black -top-2 -right-2
+            className="absolute flex bg-black flex -top-2 -right-2
             justify-center items-center w-full h-full rounded-xl z-10
             duration-200 hover:-top-1 hover:-right-1"
           >
