@@ -37,14 +37,9 @@ function App() {
       />
       <LinkToSocial
         title="Email"
-        links={[
-          "mailto:franco.dominguez343+mylinkdepo@gmail.com",
-          "hello.com",
-          "yourmom.com",
-        ]}
+        links={["mailto:franco.dominguez343+mylinkdepo@gmail.com"]}
         icon="mail.png"
         gradientColors={["#c71610", "#c71610", "#f2a60c", "#3b60c4", "#08851b"]}
-        extra={true}
       />
 
       <LinkToSocial

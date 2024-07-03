@@ -13,7 +13,6 @@ interface Props {
   links: string[];
   icon: string;
   gradientColors: string[];
-  extra?: boolean;
 }
 
 export default function LinkToSocial({
