@@ -5,9 +5,6 @@ import BottomLinks from "./components/BottomLinks.tsx";
 function App() {
   return (
     <>
-      <div className="absolute top-0 right-1 font-h2 text-black text-xs text-shadow-default">
-        Made by: Franco Dominguez
-      </div>
       <div className="relative flex flex-col items-center pb-5">
         <div className="-mt-4">
           <div className="w-48 h-48 overflow-hidden rounded-full p-2 border-2 border-black">
@@ -47,6 +44,7 @@ function App() {
         ]}
         icon="mail.png"
         gradientColors={["#c71610", "#c71610", "#f2a60c", "#3b60c4", "#08851b"]}
+        extra={true}
       />
 
       <LinkToSocial
