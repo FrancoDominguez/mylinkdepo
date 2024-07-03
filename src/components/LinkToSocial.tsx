@@ -20,7 +20,6 @@ export default function LinkToSocial({
   links,
   gradientColors,
   icon,
-  extra,
 }: Props) {
   const style: CustomCSSProperties = {
     "--clr-1": gradientColors[0],
@@ -44,7 +43,6 @@ export default function LinkToSocial({
           >
             <img src={icon} className="absolute left-5 h-6 w-6" />
             <span className="text-white text-xl font-h2">{title}</span>
-            {extra ? <div className="">hello world</div> : null}
           </div>
         </div>
       </a>
