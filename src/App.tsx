@@ -60,11 +60,6 @@ function App() {
           icon="snapchat.png"
           link="https://l.messenger.com/l.php?u=https%3A%2F%2Fsnapchat.com%2Ft%2FQJl21TOi&h=AT3tNbhXZHMBZ4VN-wGewBhgbWRk1iTlGgRYPFpjobLYcDCNGl51TB4CDTQ7InJsDNmaHaQyYMpbtgeaKgtB5Vxy90ivQx2frHDz-8-KvmAP7P2ny2Dd5Icvk42AUpvMC3FUQA"
         />
-        <BottomLinks
-          title="onlyfans"
-          icon="onlyfans.png"
-          link="https://youtu.be/5PUg1SiL3mQ"
-        />
       </div>
     </>
   );
