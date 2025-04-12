@@ -11,7 +11,7 @@ function App() {
             <img
               src="/PicOfMe.jpg"
               alt="Pic of me"
-              className=" w-full h-full object-cover scale-150"
+              className="w-full h-full object-cover object-top scale-110 rotate-[-3deg]"
             />
           </div>
         </div>
